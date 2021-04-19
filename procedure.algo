@@ -1,0 +1,45 @@
+PROCEDURE dot_product(n:INTEGER ,var v1: ARRAY_OF INTEGER[i]; var v2:ARRAY_OF INTEGER[j])
+VAR 
+i:INTEGER;
+j:INTEGER;
+BEGIN 
+ FOR i FROM 0 TO n STEP step  DO
+     read(vect1[i]);
+     FOR j FROM 0 TO n STEP DO
+     read(vect2[j]);
+ END_FOR
+ PROCEDURE dot_product(n:INTEGER ,var v1: ARRAY_OF INTEGER[i]; var v2:ARRAY_OF INTEGER[j])
+VAR 
+i:INTEGER;
+j:INTEGER;
+PS:INTEGER=0;
+BEGIN 
+ FOR i FROM 0 TO n STEP DO
+     FOR j FROM 0 TO n STEP DO
+     PS=v1[i]*v2[j];
+
+ END_FOR
+ PROCEDURE dot_product(n:INTEGER ,var v1: ARRAY_OF INTEGER[i]; var v2:ARRAY_OF INTEGER[j])
+VAR 
+i:INTEGER;
+j:INTEGER;
+PS:INTEGER=0;
+BEGIN 
+ FOR i FROM 0 TO n STEP step  DO
+     FOR j FROM 0 TO n STEP DO
+    IF (PS==0) THEN
+        write(v1[i],v2[j]"Orthogonal");
+    END_IF
+ END_FOR
+ 
+ ALGORITHM dot_product
+ VAR
+     v1: ARRAY_OF INTEGER[i];
+     v2: ARRAY_OF INTEGER[j];
+     i,j,n: INTEGER;
+ BEGIN
+    dot_prodcut(n,v1,v2);
+    product_v1v2(n,v1,v2);
+    write_v1v2(n,v1,v2);
+ END
+

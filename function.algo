@@ -1,0 +1,28 @@
+FUNCTION dot_product(n,v1[i],v2[j]) : INTEGER
+VAR
+    i: INTEGER;
+    v1:ARRAY_OF INTEGER[i];
+    v2:ARRAY_OF INTEGER[j];
+    PS:INTEGER;
+    n:INTEGER;
+BEGIN
+    FOR i FROM 0 TO n STEP DO
+         read(v1[i]);
+      FOR j FROM 0 TO n STEP DO
+          read(v2[j]);
+      PS:=v1[i]*v2[j]
+      IF (PS==0) THEN
+      END_IF
+      END_FOR
+    END_FOR
+    RETURN  write(v1[i],v2[j],"Orthogonal") ;
+END
+ALGORITHM dot_product
+VAR 
+    
+     v1: ARRAY_OF INTEGER[i];
+     v2: ARRAY_OF INTEGER[j];
+     i,j,n: INTEGER;
+ BEGIN
+   write(dot_prodcut);
+ END
